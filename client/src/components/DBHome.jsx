@@ -36,13 +36,13 @@ const DBHome = () => {
               type="bar"
               data={{
                 labels: [
-                  "Drinks",
-                  "Deserts",
-                  "Fruits",
-                  "Rice",
-                  "Curry",
-                  "Bread",
-                  "Chinese",
+                  "Chocolate",
+                  "Fondant",
+                  "Fruit",
+                  "Coffee",
+                  "Sponge",
+                  "Butter",
+                  "Flourless",
                 ],
                 datasets: [
                   {

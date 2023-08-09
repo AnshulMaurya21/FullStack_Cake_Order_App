@@ -16,7 +16,7 @@ import {
   alertSuccess,
 } from "../context/actions/alertActions";
 import { motion } from "framer-motion";
-import { buttonClick, fadeInOut } from "../animations";
+import { buttonClick} from "../animations";
 import { addNewProduct, getAllProducts } from "../api";
 import {setAllProducts} from "../context/actions/productActions"
 

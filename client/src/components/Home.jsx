@@ -4,6 +4,9 @@ import { Delivery, HeroBg } from "../assets";
 import { buttonClick, staggerFadeInOut } from "../animations";
 import { randomData } from "../utils/styles";
 
+const handleButtonClick = () => {
+  window.location.href = "http://localhost:3000/dashboard/orders";
+}
 const Home = () => {
   return (
     <motion.div className="w-full grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -33,13 +36,14 @@ const Home = () => {
         <motion.button
           {...buttonClick}
           className=" bg-gradient-to-bl from-orange-400 to-orange-600 px-4 py-2 rounded-xl text-black text-base font-semibold"
+          onClick={handleButtonClick}
         >
           Order Now
         </motion.button>
       </div>
       <div className="py-5 flex-1 flex items-center justify-end relative">
         <img
-          className="absolute top-0 right-0 md:right-2 w-full h-420 md:w-auto md:h-650"
+          className="absolute top-0 right-0 md:right-2 w-full h-420 md:w-full md:h-full"
           src={HeroBg}
           alt=""
         />

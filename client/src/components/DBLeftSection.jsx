@@ -2,7 +2,12 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import { logo } from "../assets";
 import { isActiveStyles, isNotActiveStyles } from "../utils/styles";
+import { buttonClick } from "../animations";
+import { motion } from "framer-motion";
 
+const handleButtonClick = () => {
+  window.location.href = "https://www.instagram.com/anshhullll/";
+};
 const DBLeftSection = () => {
   return (
     <div className="h-full py-12 flex flex-col bg-slate-50 backdrop-blur-md shadow-md min-w-210 w-300 gap-3">
@@ -76,7 +81,9 @@ const DBLeftSection = () => {
             Having trouble in city. Please contact us for more questions.
           </p>
           <p className="px-2 py-2 rounded-full bg-primary text-red-400 cursor-pointer">
-            Get in touch
+            <motion.button {...buttonClick} onClick={handleButtonClick}>
+              Get in touch
+            </motion.button>
           </p>
         </div>
       </div>
