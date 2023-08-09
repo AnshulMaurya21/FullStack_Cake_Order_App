@@ -21,6 +21,7 @@ const Slider = () => {
         spaceBetween={30}
         grabCursor={true}
         className="mySwiper"
+        id="order"
       >
         {fruits &&
           fruits.map((data, i) => (
